@@ -1,1 +1,1 @@
-supported_languages <- c("de", "en")
+languages <- c("de", "en")
