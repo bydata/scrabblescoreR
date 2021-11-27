@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# scrabblescorer
+# scrabblescoreR
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -26,16 +26,16 @@ Calculate the score a word gains in the game of Scrabble. Currently, English and
 
 ## Installation
 
-You can install the development version of scrabblescorer from [Github](https://github.com/bydata/scrabblescorer) with:
+You can install the development version of scrabblescorer from [Github](https://github.com/bydata/scrabblescoreR) with:
 
 ``` r
-devtools::install_github("bydata/scrabblescorer")
+devtools::install_github("bydata/scrabblescoreR")
 ```
 
 ## Example
 
 ```{r example}
-library(scrabblescorer)
+library(scrabblescoreR)
 
 # get the Scrabble score for one word
 scrabble_score("rstats", lang = "en")

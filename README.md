@@ -6,7 +6,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-# scrabblescorer
+# scrabblescoreR
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -17,16 +17,16 @@ English and German are supported.
 ## Installation
 
 You can install the development version of scrabblescorer from
-[Github](https://github.com/bydata/scrabblescorer) with:
+[Github](https://github.com/bydata/scrabblescoreR) with:
 
 ``` r
-devtools::install_github("bydata/scrabblescorer")
+devtools::install_github("bydata/scrabblescoreR")
 ```
 
 ## Example
 
 ``` r
-library(scrabblescorer)
+library(scrabblescoreR)
 
 # get the Scrabble score for one word
 scrabble_score("rstats", lang = "en")
