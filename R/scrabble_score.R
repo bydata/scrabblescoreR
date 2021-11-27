@@ -16,8 +16,10 @@
 #' @examples
 #'   scrabble_score("rstats")
 #'   scrabble_score(c("rstats", "package"))
-scrabble_score <- function(words, ignore_whitespace = FALSE, lang = c("de", "en")) {
-  stopifnot("Language currently not supported." = lang %in% supported_languages)
+scrabble_score <- function(words,
+                           ignore_whitespace = FALSE,
+                           lang = c("de", "en")) {
+  stopifnot("Language currently not supported." = lang %in% supported_languages())
   if (missing(lang)) lang <- "de"
   if (ignore_whitespace) {
     words <- gsub("\\s", "", words)
