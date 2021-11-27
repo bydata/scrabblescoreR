@@ -8,8 +8,8 @@ letter_scores[["de"]] <- c(
  10, 3, 6, 6, 8
 )
 names(letter_scores[["de"]]) <- toupper(
-  # c(letters, c("ä", "ö", "ü"))
-  c(letters, c("\\u00E4", "\\u00F6", "\\u00FC"))
+  c(letters, c("ä", "ö", "ü"))
+  # c(letters, c("\\u00E4", "\\u00F6", "\\u00FC"))
   )
 
 
