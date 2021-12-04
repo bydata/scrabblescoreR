@@ -4,7 +4,7 @@
 #'
 #' @param words A character value or a character vector
 #' @param lang The language to base the score on. Currently English (en) and
-#'   German (de) are supported
+#'   German (de) are supported. Default: English (en)
 #' @param ignore_whitespace Boolean. Shall whitespace be removed from words before
 #'   calculating the score? If FALSE (the default), any whitespace will result in
 #'   an NA value
@@ -18,13 +18,14 @@
 #'
 #' @examples
 #'   scrabble_score("rstats")
+#'   scrabble_score("rstats", lang = "en")
 #'   scrabble_score(c("rstats", "package"))
 scrabble_score <- function(words,
                            ignore_whitespace = FALSE,
                            ignore_invalid_characters = FALSE,
                            lang = c("de", "en")) {
   stopifnot("Language currently not supported." = lang %in% supported_languages())
-  if (missing(lang)) lang <- "de"
+  if (missing(lang)) lang <- "en"
   words2 <- words
   if (ignore_whitespace) {
     words2 <- gsub("\\s", "", words2)

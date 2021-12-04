@@ -2,9 +2,14 @@
 % Please edit documentation in R/scrabble_score.R
 \name{scrabble_score}
 \alias{scrabble_score}
-\title{Calculate the SCRABBLE score}
+\title{Calculate the Scrabble score}
 \usage{
-scrabble_score(words, ignore_whitespace = FALSE, lang = c("de", "en"))
+scrabble_score(
+  words,
+  ignore_whitespace = FALSE,
+  ignore_invalid_characters = FALSE,
+  lang = c("de", "en")
+)
 }
 \arguments{
 \item{words}{A character value or a character vector}
@@ -13,17 +18,22 @@ scrabble_score(words, ignore_whitespace = FALSE, lang = c("de", "en"))
 calculating the score? If FALSE (the default), any whitespace will result in
 an NA value}
 
+\item{ignore_invalid_characters}{Boolean. Shall characters which are not part
+of the language's Scrabble alphabet be ignored (i.e. 0 points)?
+  If FALSE (the default), any whitespace will result in an NA value}
+
 \item{lang}{The language to base the score on. Currently English (en) and
-German (de) are supported}
+German (de) are supported. Default: English (en)}
 }
 \value{
-A named vector of the same length as `words` with the SCRABBLE score
+A named vector of the same length as `words` with the Scrabble score
   for each word
 }
 \description{
-Calculate the SCRABBLE score for a word or a vector of words in a given language.
+Calculate the Scrabble score for a word or a vector of words in a given language.
 }
 \examples{
   scrabble_score("rstats")
+  scrabble_score("rstats", lang = "en")
   scrabble_score(c("rstats", "package"))
 }
