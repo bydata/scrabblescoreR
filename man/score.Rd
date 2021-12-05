@@ -12,7 +12,7 @@ score(x, lang)
 \item{lang}{The language to base the score on. Currently only German (de) supported}
 }
 \value{
-The SCRABBLE score for the input character vector
+The Scrabble score for the input character vector
 }
 \description{
 Title
