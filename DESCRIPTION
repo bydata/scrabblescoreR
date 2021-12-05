@@ -1,11 +1,12 @@
 Package: scrabblescoreR
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Title: Calculate the Scrabble Score Value
+Version: 0.0.0.9000
 Author: Ansgar Wolsing
 Maintainer: Ansgar Wolsing <ansgar.wolsing@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: This package provides a function `scrabble_score` to calculate the 
+    score value for a given word or a vector of words. Currently, English and German
+    letter score values are supported
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
